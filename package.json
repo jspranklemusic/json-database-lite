@@ -2,7 +2,7 @@
   "name": "local-json-database",
   "version": "1.0.0",
   "description": "A simple database that is stored on the server in JSON format, similar to Google Firebase.",
-  "main": "local-json-db.js",
+  "main": "local-json-database.js",
   "scripts": {
     "test": "start"
   },
