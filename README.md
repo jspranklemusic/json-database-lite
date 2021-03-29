@@ -14,4 +14,8 @@ Since the database is a JSON file, most of the operations (searching, deletion, 
 
 `database.database.key = "value";` - This modifies the database, but doesn't save the value to the file. 
 
-`database.write();` - This line must be called after each modification to save the changes to the database.json file. 
+`database.write();` - This line must be called after each modification in order to save the changes to the database.json file. 
+
+`database.append(data, position)` - This creates a unique key and sets it to the value provided in `data`. If an optional `position` argument is provided, the database will append the value at the point of insertion, even if the key does not exist or if the point is deeply nested. 
+
+  An example of calling this function would be `database.append("My value", "point.nested.mydata")` and would produce a result of `database.point.nexted.mydata[UNIQUELYGENERATEDID]:"My value"`.
