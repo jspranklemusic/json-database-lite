@@ -4,6 +4,9 @@ A small, simple database that is locally stored in a JSON file.
 ## Usage
 Here is how to get started with your project.
 
+### Installation
+To install this project, run `npm install json-database-lite` .
+
 
 ### Importing
 To use this in your project, import the module with `const JSONDatabaseLite = require('json-database-lite');`, 
